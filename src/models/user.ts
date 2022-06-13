@@ -8,7 +8,10 @@ const UserSchema = new Schema({
     username: String,
     password: String,
     isAdmin: Boolean,
-    participants: [Schema.Types.ObjectId]
+    participants: {
+        year: Number,
+        roster: [String]
+    }
 })
 
 const Participant = mongoose.model('user', UserSchema, 'user');

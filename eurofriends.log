@@ -1,0 +1,12 @@
+2022-06-13T17:52:51.946Z [routes\participant-router.ts] info: Returning all participants from years: 2000-2444
+2022-06-13T17:53:03.327Z [routes\participant-router.ts] error: Error in request with parameter year = ee
+2022-06-13T18:37:19.799Z [routes\participant-router.ts] error: Error in request with parameter year = ee
+2022-06-13T18:37:29.363Z [routes\participant-router.ts] info: Returning participants from year: 1999
+2022-06-13T18:37:52.403Z [routes\participant-router.ts] info: Returning participants from year: 1999
+2022-06-13T18:37:52.420Z [src\index.ts] info: GET /participants/1999 200 2789 - 16.023 ms
+2022-06-13T18:45:20.109Z [routes\participant-router.ts] info: Returning participants from year: 1999
+2022-06-13T18:45:20.126Z [src\index.ts] info: {"method":"GET","url":"/participants/1999","status":"200","content_length":"2789","response_time":"16.328"}
+2022-06-13T18:50:27.672Z [routes\participant-router.ts] info: Returning participants from year: 1999
+2022-06-13T18:50:27.689Z [src\index.ts] info: {"method":"GET","url":"/participants/1999","status":200,"content_length":"2789","response_time":16.254}
+2022-06-13T18:55:11.989Z [routes\participant-router.ts] error: Error in request with parameter year = poop
+2022-06-13T18:55:11.996Z [src\index.ts] info: {"method":"GET","url":"/participants/poop","status":200,"content_length":"42","response_time":4.657}

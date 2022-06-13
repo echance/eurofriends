@@ -6,11 +6,17 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const mongoose_1 = __importDefault(require("mongoose"));
 const Schema = mongoose_1.default.Schema;
 const ParticipantSchema = new Schema({
-    country: String,
-    artist: String,
-    song: String,
-    youtube: String,
-    lyrics: String
+    year: Number,
+    participants: [
+        {
+            country: String,
+            artist: String,
+            song: String,
+            youtube: String,
+            lyrics: String,
+            final_score: Number
+        }
+    ]
 });
-const Participant = mongoose_1.default.model('participant', ParticipantSchema, 'participant');
+const Participant = mongoose_1.default.model('participants_by_year', ParticipantSchema, 'participants_by_year');
 exports.default = Participant;
